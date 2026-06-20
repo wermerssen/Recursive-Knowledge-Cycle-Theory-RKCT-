@@ -1,122 +1,126 @@
-/* -----------------------------------------------------------
-   Global Layout & Typography
------------------------------------------------------------ */
-
-:root {
-  --rrk-blue: #002b5c;
-  --rrk-blue-light: #1a3f7a;
-  --text: #333;
-  --bg: #f5f5f5;
-  --max-width: 900px;
-}
+/* =========================================================
+   GLOBAL LAYOUT
+   ========================================================= */
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-               "Helvetica Neue", Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.6;
+    font-family: system-ui, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #222;
+    background: #fff;
 }
 
 main {
-  max-width: var(--max-width);
-  margin: 40px auto;
-  padding: 0 20px;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
 }
 
-/* -----------------------------------------------------------
-   Header (Navigation)
------------------------------------------------------------ */
+
+/* =========================================================
+   HEADER + NAVIGATION
+   ========================================================= */
 
 header {
-  background: var(--rrk-blue);
-  padding: 14px 0;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    background: #005bbb; /* RRK-Blau */
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+/* ✔ Fix: Text im Header immer weiß */
+header, header nav a, header h1 {
+    color: white;
 }
 
 header nav {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 20px;
-  display: flex;
-  gap: 20px;
+    margin-bottom: 1rem;
 }
 
 header nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  padding: 6px 0;
+    margin: 0 0.8rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s ease;
 }
 
 header nav a:hover {
-  text-decoration: underline;
+    opacity: 0.7;
 }
 
-/* -----------------------------------------------------------
-   Footer
------------------------------------------------------------ */
-
-footer {
-  margin-top: 60px;
-  padding: 20px 0;
-  text-align: center;
-  color: #666;
-  font-size: 0.9rem;
-  border-top: 1px solid #ddd;
+.rrk-logo {
+    width: 120px;
+    margin-bottom: 1rem;
 }
 
-/* -----------------------------------------------------------
-   Headings
------------------------------------------------------------ */
+
+/* =========================================================
+   HEADINGS
+   ========================================================= */
 
 h1, h2, h3 {
-  font-weight: 600;
-  color: var(--text);
+    font-weight: 600;
+    color: #111;
 }
 
 h1 {
-  margin-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
 h2 {
-  margin-top: 40px;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
 }
 
-/* -----------------------------------------------------------
-   Links
------------------------------------------------------------ */
-
-a {
-  color: var(--rrk-blue);
-  text-decoration: none;
+h3 {
+    margin-top: 1.8rem;
+    margin-bottom: 0.5rem;
 }
 
-a:hover {
-  text-decoration: underline;
+
+/* =========================================================
+   TEXT + LISTS
+   ========================================================= */
+
+p {
+    max-width: 850px;
 }
 
-/* -----------------------------------------------------------
-   Glossary Formatting
------------------------------------------------------------ */
-
-dt {
-  font-weight: 600;
-  margin-top: 25px;
+ol {
+    padding-left: 1.2rem;
+    max-width: 850px;
 }
 
-dd {
-  margin-left: 0;
-  margin-top: 5px;
+li {
+    margin-bottom: 0.7rem;
 }
 
-/* -----------------------------------------------------------
-   Utility Classes
------------------------------------------------------------ */
 
-.back {
-  margin-top: 40px;
-  display: inline-block;
+/* =========================================================
+   SECTIONS + DIVIDERS
+   ========================================================= */
+
+section {
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+hr {
+    margin: 3rem 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+    color: #666;
+    font-size: 0.9rem;
 }

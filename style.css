@@ -23,12 +23,11 @@ main {
    ========================================================= */
 
 header {
-    background: #005bbb; /* RRK-Blau */
+    background: #005bbb; /* RKCT-Blau */
     padding: 1.5rem 1rem;
     text-align: center;
 }
 
-/* ✔ Fix: Text im Header immer weiß */
 header, header nav a, header h1 {
     color: white;
 }
@@ -87,7 +86,7 @@ p {
     max-width: 850px;
 }
 
-ol {
+ul, ol {
     padding-left: 1.2rem;
     max-width: 850px;
 }
@@ -123,4 +122,16 @@ footer {
     margin-top: 3rem;
     color: #666;
     font-size: 0.9rem;
+}
+
+/* Einheitlicher RRK/RKCT-Copyright-Stil */
+footer p {
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ddd;
+    font-size: 0.9rem;
+    color: #666;
+    opacity: 0.85;
 }

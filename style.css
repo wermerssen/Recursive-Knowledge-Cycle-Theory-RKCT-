@@ -19,25 +19,31 @@ main {
 
 
 /* =========================================================
-   HEADER + NAVIGATION
+   HEADER + NAVIGATION + LOGO
    ========================================================= */
 
 header {
     background: #005bbb; /* RKCT-Blau */
     padding: 1.5rem 1rem;
-    text-align: center;
 }
 
-header, header nav a, header h1 {
-    color: white;
-}
-
+/* Logo + Navigation in einer Zeile */
 header nav {
-    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
+/* Links im Header */
+.rkct-logo {
+    height: 48px;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+
+/* Navigation */
 header nav a {
-    margin: 0 0.8rem;
+    color: white;
     text-decoration: none;
     font-weight: 500;
     transition: opacity 0.2s ease;
@@ -45,11 +51,6 @@ header nav a {
 
 header nav a:hover {
     opacity: 0.7;
-}
-
-.rrk-logo {
-    width: 120px;
-    margin-bottom: 1rem;
 }
 
 
@@ -97,6 +98,25 @@ li {
 
 
 /* =========================================================
+   DEFINITION LISTS (Glossar)
+   ========================================================= */
+
+dl {
+    max-width: 850px;
+}
+
+dt {
+    font-weight: 600;
+    margin-top: 1.5rem;
+}
+
+dd {
+    margin-left: 0;
+    margin-bottom: 1rem;
+}
+
+
+/* =========================================================
    SECTIONS + DIVIDERS
    ========================================================= */
 
@@ -124,7 +144,7 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Einheitlicher RRK/RKCT-Copyright-Stil */
+/* Einheitlicher RKCT-Copyright-Stil */
 footer p {
     display: block;
     text-align: center;

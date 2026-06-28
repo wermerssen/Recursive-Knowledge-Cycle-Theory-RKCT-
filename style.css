@@ -1,59 +1,157 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Recursive Knowledge Cycle Theory – Start</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+/* =========================================================
+   GLOBAL LAYOUT
+   ========================================================= */
 
-<header>
-  <nav>
-    <img src="logo.svg" class="rkct-logo" alt="RKCT Logo">
-    <a href="de/index.html">Deutsch</a>
-    <a href="en/index.html">English</a>
-  </nav>
-</header>
+body {
+    font-family: system-ui, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #222;
+    background: #fff;
+}
 
-<main>
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
 
-  <h1>Recursive Knowledge Cycle Theory (RKCT)</h1>
 
-  <p>
-    Welcome! Choose a language or explore the foundational evolution of the RRK framework.
-  </p>
+/* =========================================================
+   HEADER + NAVIGATION + LOGO
+   ========================================================= */
 
-  <h2>Language Selection</h2>
-  <ul>
-    <li><a href="de/index.html">German Version</a></li>
-    <li><a href="en/index.html">English Version</a></li>
-  </ul>
+header {
+    background: #005bbb; /* RKCT-Blau */
+    padding: 1.5rem 1rem;
+}
 
-  <!-- ⭐ NEW: Official OSF Project Integration -->
-  <h2>Official OSF Project</h2>
-  <p>
-    The complete version of the Recursive Knowledge Cycle Theory (RKCT 4.4) is publicly available on OSF:
-  </p>
-  <ul>
-    <li>
-      <a href="https://osf.io/ecb6p/" target="_blank">
-        RKCT 4.4 – OSF Project
-      </a>
-    </li>
-  </ul>
-  <!-- ⭐ END OSF Integration -->
+/* Logo + Navigation in einer Zeile */
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
 
-  <h2>RRK Framework</h2>
-  <ul>
-    <li><a href="rrk-evolution-en.html">Evolution of the RRK Hypothesis (English)</a></li>
-    <li><a href="rrk-evolution-de.html">Evolution der RKK‑Hypothese (Deutsch)</a></li>
-  </ul>
+/* Links im Header */
+.rkct-logo {
+    height: 48px;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
 
-</main>
+/* Navigation */
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s ease;
+}
 
-<footer>
-  <p>© 2026 Eric Lars Wermerssen — RKCT • Recursive Knowledge Cycle Theory</p>
-</footer>
+header nav a:hover {
+    opacity: 0.7;
+}
 
-</body>
-</html>
+
+/* =========================================================
+   HEADINGS
+   ========================================================= */
+
+h1, h2, h3 {
+    font-weight: 600;
+    color: #111;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    margin-top: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+
+/* =========================================================
+   TEXT + LISTS
+   ========================================================= */
+
+p {
+    max-width: 850px;
+}
+
+ul, ol {
+    padding-left: 1.2rem;
+    max-width: 850px;
+}
+
+li {
+    margin-bottom: 0.7rem;
+}
+
+
+/* =========================================================
+   DEFINITION LISTS (Glossar)
+   ========================================================= */
+
+dl {
+    max-width: 850px;
+}
+
+dt {
+    font-weight: 600;
+    margin-top: 1.5rem;
+}
+
+dd {
+    margin-left: 0;
+    margin-bottom: 1rem;
+}
+
+
+/* =========================================================
+   SECTIONS + DIVIDERS
+   ========================================================= */
+
+section {
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+hr {
+    margin: 3rem 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Einheitlicher RKCT-Copyright-Stil */
+footer p {
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ddd;
+    font-size: 0.9rem;
+    color: #666;
+    opacity: 0.85;
+}
